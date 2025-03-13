@@ -112,6 +112,41 @@
       "lat": 18.447025,
       "lng": 73.804016,
       "timestamp": "2025-03-13T18:53:09.081Z"
+    },
+    {
+      "text": "fdsf",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T19:08:43.061Z"
+    },
+    {
+      "text": "fsdf",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T19:08:44.713Z"
+    },
+    {
+      "text": "fsdf",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T19:08:45.840Z"
+    },
+    {
+      "text": "fdsfs",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T19:08:46.940Z"
+    },
+    {
+      "text": "fdsf",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T19:08:53.764Z"
     }
   ],
   "8.411756-48.463978": [
@@ -121,6 +156,20 @@
       "lat": 48.463978,
       "lng": 8.411756,
       "timestamp": "2025-03-13T18:52:48.232Z"
+    },
+    {
+      "text": "dfs",
+      "location": "Freudenstadt, Kreis Freudenstadt, Baden-Württemberg, Germany",
+      "lat": 48.463978,
+      "lng": 8.411756,
+      "timestamp": "2025-03-13T19:03:15.227Z"
+    },
+    {
+      "text": "dsa",
+      "location": "Freudenstadt, Kreis Freudenstadt, Baden-Württemberg, Germany",
+      "lat": 48.463978,
+      "lng": 8.411756,
+      "timestamp": "2025-03-13T19:06:26.077Z"
     }
   ],
   "-92.45233-37.23116": [
@@ -137,6 +186,61 @@
       "lat": 37.23116,
       "lng": -92.45233,
       "timestamp": "2025-03-13T18:54:25.429Z"
+    }
+  ],
+  "24.879512-12.05051": [
+    {
+      "text": "fds",
+      "location": "South Darfur, Sudan",
+      "lat": 12.05051,
+      "lng": 24.879512,
+      "timestamp": "2025-03-13T19:09:01.672Z"
+    },
+    {
+      "text": "dsad",
+      "location": "South Darfur, Sudan",
+      "lat": 12.05051,
+      "lng": 24.879512,
+      "timestamp": "2025-03-13T19:09:27.965Z"
+    },
+    {
+      "text": "fds",
+      "location": "South Darfur, Sudan",
+      "lat": 12.05051,
+      "lng": 24.879512,
+      "timestamp": "2025-03-13T19:12:33.228Z"
+    }
+  ],
+  "78.16539-31.496689": [
+    {
+      "text": "ds",
+      "location": "D.Sapmic-143, Sangla, Kinnaur, Himachal Pradesh, India",
+      "lat": 31.496689,
+      "lng": 78.16539,
+      "timestamp": "2025-03-13T19:09:41.965Z"
+    },
+    {
+      "text": "dsad",
+      "location": "D.Sapmic-143, Sangla, Kinnaur, Himachal Pradesh, India",
+      "lat": 31.496689,
+      "lng": 78.16539,
+      "timestamp": "2025-03-13T19:09:46.933Z"
+    }
+  ],
+  "128.168944-36.536236": [
+    {
+      "text": "dsa",
+      "location": "South Korea",
+      "lat": 36.536236,
+      "lng": 128.168944,
+      "timestamp": "2025-03-13T19:12:45.071Z"
+    },
+    {
+      "text": "dsa",
+      "location": "South Korea",
+      "lat": 36.536236,
+      "lng": 128.168944,
+      "timestamp": "2025-03-13T19:12:47.659Z"
     }
   ]
 }

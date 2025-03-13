@@ -1,30 +1,26 @@
 const express = require('express');
-const fs = require('fs');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5000;
-const DATA_FILE = 'data.json';
+const PORT = process.env.PORT || 5000;
 
+// Enable CORS
 app.use(express.json());
 app.use(cors());
 
-// Load reviews or initialize empty object
-const loadReviews = () => {
-  try {
-    const data = fs.readFileSync(DATA_FILE, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    return {}; // Empty if file doesn't exist
-  }
+// Temporary storage (Map) with TTL (1 hour = 3600000ms)
+const reviews = new Map();
+const EXPIRATION_TIME = 60 * 60 * 1000; // 1 hour in milliseconds
+
+// Function to auto-delete reviews after expiration time
+const setExpiration = (key) => {
+  setTimeout(() => {
+    reviews.delete(key);
+    console.log(`🗑️ Expired reviews for location: ${key}`);
+  }, EXPIRATION_TIME);
 };
 
-// Save reviews to data.json
-const saveReviews = (reviews) => {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(reviews, null, 2));
-};
-
-// API to submit a review
+// 📨 Submit a Review
 app.post('/submit-review', (req, res) => {
   const { text, location, lat, lng } = req.body;
 
@@ -32,26 +28,33 @@ app.post('/submit-review', (req, res) => {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
-  const reviews = loadReviews();
   const locationKey = `${lng}-${lat}`;
 
-  if (!reviews[locationKey]) {
-    reviews[locationKey] = [];
+  if (!reviews.has(locationKey)) {
+    reviews.set(locationKey, []);
   }
 
   const newReview = { text, location, lat, lng, timestamp: new Date() };
-  reviews[locationKey].push(newReview);
+  reviews.get(locationKey).push(newReview);
 
-  saveReviews(reviews);
-  res.json({ message: 'Review saved successfully!', review: newReview });
+  // Set expiration for this location
+  if (reviews.get(locationKey).length === 1) {
+    setExpiration(locationKey);
+  }
+
+  res.json({ message: '✅ Review saved successfully!', review: newReview });
 });
 
-// API to fetch all reviews
+// 📜 Get All Reviews
 app.get('/reviews', (req, res) => {
-  const reviews = loadReviews();
-  res.json(reviews);
+  const allReviews = Object.fromEntries(reviews); // Convert Map to Object
+  res.json(allReviews);
 });
 
+// 🚀 Start Server
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running at http://localhost:${PORT}`);
 });
+
+// ⚡ Vercel config (for API routing)
+module.exports = app;
