@@ -1,0 +1,89 @@
+{
+  "-118.2437-34.0522": [
+    {
+      "text": "dsdds",
+      "location": "Los Angeles",
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "timestamp": "2025-03-13T18:38:10.619Z"
+    }
+  ],
+  "-4.055685-41.294856": [
+    {
+      "text": "dsadsa",
+      "location": "Spain",
+      "lat": 41.294856,
+      "lng": -4.055685,
+      "timestamp": "2025-03-13T18:42:21.509Z"
+    }
+  ],
+  "77.64888-12.968737": [
+    {
+      "text": "sdasds",
+      "location": "Jeevan Bhima Nagar Main Road, Hal, 560075, New Tippasandra, Bengaluru, Bengaluru Urban, Karnataka, India",
+      "lat": 12.968737,
+      "lng": 77.64888,
+      "timestamp": "2025-03-13T18:42:48.325Z"
+    }
+  ],
+  "-56.214751--34.100927": [
+    {
+      "text": "fsdfs",
+      "location": "Florida, Uruguay",
+      "lat": -34.100927,
+      "lng": -56.214751,
+      "timestamp": "2025-03-13T18:45:03.460Z"
+    },
+    {
+      "text": "fdsf",
+      "location": "Florida, Uruguay",
+      "lat": -34.100927,
+      "lng": -56.214751,
+      "timestamp": "2025-03-13T18:45:22.032Z"
+    },
+    {
+      "text": "fsdf",
+      "location": "Florida, Uruguay",
+      "lat": -34.100927,
+      "lng": -56.214751,
+      "timestamp": "2025-03-13T18:45:23.376Z"
+    },
+    {
+      "text": "fsdf",
+      "location": "Florida, Uruguay",
+      "lat": -34.100927,
+      "lng": -56.214751,
+      "timestamp": "2025-03-13T18:45:24.984Z"
+    }
+  ],
+  "73.804016-18.447025": [
+    {
+      "text": "ds",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T18:47:37.666Z"
+    },
+    {
+      "text": "dsd",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T18:47:40.140Z"
+    },
+    {
+      "text": "dsda",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T18:47:41.363Z"
+    },
+    {
+      "text": "sad",
+      "location": "DSK Vishwa, Narhe, Pune, Pune, Maharashtra, India",
+      "lat": 18.447025,
+      "lng": 73.804016,
+      "timestamp": "2025-03-13T18:47:42.841Z"
+    }
+  ]
+}
