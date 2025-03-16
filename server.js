@@ -36,7 +36,7 @@ const reviewSchema = new mongoose.Schema({
   location: { type: String, required: true },
   lat: { type: Number, required: true },
   lng: { type: Number, required: true },
-  timestamp: { type: Date, default: Date.now, expires: 3600 } // Auto-delete after 1 hour
+  timestamp: { type: Date, default: Date.now } // Removed expiration
 });
 
 const Review = mongoose.model('Review', reviewSchema);
